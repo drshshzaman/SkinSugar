@@ -21,7 +21,8 @@ function ProductCard() {
 
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/4  drop-shadow-lg ">
-            <div
+            <Link
+              to={"/productinfo/2"}
               className="h-full border-2 hover:shadow-gray-100 hover:shadow-2xl transition-shadow duration-300 ease-in-out    border-gray-200 border-opacity-60 rounded-2xl overflow-hidden"
               style={{
                 backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
@@ -64,7 +65,7 @@ function ProductCard() {
                   </button>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="p-4 md:w-1/4  drop-shadow-lg ">
